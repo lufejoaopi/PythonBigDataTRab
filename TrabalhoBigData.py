@@ -95,4 +95,16 @@ print('Media:',dataset['PetalWidth'].mean())
 print(dataset[['PetalWidth']] > dataset[['PetalWidth']].mean())
 
 
+cols = ['Sepallength','SepalWidth','PetalLength','PetalWidth']
+dataset.rename(columns={cols[0]:0, cols[1]:1, cols[2]:2, cols[3]:3},inplace = True)
+dataset.loc[::50]
+print(dataset.shape)
+print(dataset.describe())
 
+colors = {'Iris-setosa': 'red','Iris-virginica':'blue','Iris-versicolor':'green'}
+plt.scatter(
+    dataset[2],
+    dataset[3],
+    c=dataset['Class'].map(colors),marker = '*'
+)
+plt.show()
