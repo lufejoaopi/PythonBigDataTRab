@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 dataset = pd.read_csv(
-    '/home/joao/sql/machine.data' 
+    'machine.data' 
 )
 
 #print('comprimento da sepala')
