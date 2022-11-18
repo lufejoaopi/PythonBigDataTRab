@@ -17,7 +17,7 @@ print(mostra)
 print('mostra cada atributo das colunas')
 coluna = list(dataset.columns)
 print (coluna)
-
+display(dataset)
 input("Aperte <enter> para continuar")
 
 #s1 = s1.style.highlight_max(color ='lightgreen', axis = 0)
