@@ -65,3 +65,29 @@ print('______Tabela Odenada de Forma Ascendente_______')
 print(dataset.sort_values('Sepallength'))
 print('______Tabela Ordenada de Forma Descendente_______')
 print(dataset.sort_values('Sepallength', ascending=False))
+
+print(dataset['Sepallength'].describe())
+
+
+print('Media da coluna 1:') 
+print(dataset[["Sepallength"]] < dataset[["Sepallength"]].mean())
+print('Media da coluna 2:') 
+print(dataset[["Sepallength"]] < dataset[["Sepallength"]].mean()) 
+print('Media da coluna 3:') 
+print(dataset[["Sepallength"]] < dataset[["Sepallength"]].mean())
+print('Media da coluna 4:') 
+print(dataset[["Sepallength"]] < dataset[["Sepallength"]].mean())
+
+print('Media da coluna 1:') 
+print(dataset[["Sepallength"]] > dataset[["Sepallength"]].mean())
+print('Media da coluna 2:') 
+print(dataset[["Sepallength"]] > dataset[["Sepallength"]].mean())
+print('Media da coluna 3:') 
+print(dataset[["Sepallength"]] > dataset[["Sepallength"]].mean())
+print('Media da coluna 4:') 
+print(dataset[["Sepallength"]] > dataset[["Sepallength"]].mean())
+
+
+
+
+
