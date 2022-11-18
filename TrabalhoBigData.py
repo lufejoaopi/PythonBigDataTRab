@@ -68,7 +68,7 @@ print(dataset.sort_values('Sepallength', ascending=False))
 
 print(dataset['Sepallength'].describe())
 
-print('____Coluna Abaixo da Media:_____')
+print('____Coluna com valores abaixo da Media:_____')
 print('Coluna 1:') 
 print(dataset[["Sepallength"]] < dataset[["Sepallength"]].mean())
 print('Coluna 2:') 
@@ -78,7 +78,7 @@ print(dataset[["Sepallength"]] < dataset[["Sepallength"]].mean())
 print('Coluna 4:') 
 print(dataset[["Sepallength"]] < dataset[["Sepallength"]].mean())
 
-print('_____Coluna acima da Media:_____')
+print('_____Coluna com valores acima da Media:_____')
 print('Coluna 1:') 
 print(dataset[["Sepallength"]] > dataset[["Sepallength"]].mean())
 print('Coluna 2:') 
