@@ -100,7 +100,7 @@ print(dataset[['Time']] < dataset[['Time']].mean())
 #print(dataset[['donatedBlood']] < dataset[['donatedBlood']].mean())
 
 
-print('____Coluna com valores abaixo da Media:_____')
+print('____Coluna com valores acima da Media:_____')
 print('Coluna 1:') 
 print('Media:',dataset['Recency'].mean())
 print(dataset[['Recency']] > dataset[['Recency']].mean())
