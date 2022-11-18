@@ -22,6 +22,8 @@ print('mostra cada atributo das colunas')
 coluna = list(dataset.columns)
 print (coluna)
 
+input("Aperte <enter> para continuar")
+
 #s1 = s1.style.highlight_max(color = 'lightgreen', axis = 0)
 print( '__Media das Colunas__')
 print('Media da coluna 3\n ', dataset['MYCT'].mean())
@@ -44,6 +46,8 @@ print('Desvio da coluna 8\n ', dataset['CHMAX'].std())
 print('Desvio da coluna 9\n ', dataset['PRP'].std())
 print('Desvio da coluna 10\n ', dataset['ERP'].std())
 
+input("Aperte <enter> para continuar")
+
 print('_______Moda_______')
 print('Moda da coluna 3\n ', dataset['MYCT'].mode())
 print('Moda da coluna 4\n ', dataset['MMIN'].mode())
@@ -63,6 +67,8 @@ print('Mediana da coluna 7\n ', dataset['CHMIN'].median())
 print('Mediana da coluna 8\n ', dataset['CHMAX'].median())
 print('Mediana da coluna 9\n ', dataset['PRP'].median())
 print('Mediana da coluna 10\n ', dataset['ERP'].median())
+
+input("Aperte <enter> para continuar")
 
 print('_______Valor_Maximo_______')
 print('Max da coluna 3\n ', dataset['MYCT'].max())
@@ -84,6 +90,8 @@ print('Min da coluna 8\n ', dataset['CHMAX'].min())
 print('Min da coluna 9\n ', dataset['PRP'].min())
 print('Min da coluna 10\n ', dataset['ERP'].min())
 
+input("Aperte <enter> para continuar")
+
 #print('min da coluna 1:\n ',dataset['Sepallength'].min())
 print('______Tabela Odenada de Forma Ascendente_______')
 print(dataset.sort_values('MYCT'))
@@ -91,6 +99,8 @@ print('______Tabela Ordenada de Forma Descendente_______')
 print(dataset.sort_values('MYCT', ascending=False))
 
 print(dataset['MYCT'].describe())
+
+input("Aperte <enter> para continuar")
 
 print('____Coluna com valores abaixo da Media:_____')
 print('Coluna 3:') 
