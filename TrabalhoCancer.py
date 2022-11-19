@@ -153,3 +153,10 @@ print(dataset[['Mitoses']] > dataset[['Mitoses']].mean())
 print('Coluna 11:') 
 print('Media:',dataset['Class'].mean())
 print(dataset[['Class']] > dataset[['Class']].mean())
+
+
+x= dataset.CellSize
+y = dataset.CellShape
+
+plt.pie(x,labels = y,startangle = 90, shadow = True,)
+plt.show()

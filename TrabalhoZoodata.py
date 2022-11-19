@@ -66,3 +66,10 @@ print('Media:',dataset['type'].mean())
 print(dataset[['type']] > dataset[['type']].mean()) 
 
 print(dataset.shape)
+
+x= dataset.animal_name
+y = dataset.fins
+
+plt.scatter(x,y,label = 'Pontos',  marker = '+',s =100)
+plt.show()
+plt.show()
