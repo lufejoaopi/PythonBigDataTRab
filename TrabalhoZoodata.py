@@ -17,35 +17,26 @@ input("Aperte <enter> para continuar")
 print( '__Media das Colunas__')
 print('Media da coluna 14\n ', dataset['legs'].mean())
 print('Media da coluna 18\n ', dataset['type'].mean())
-#print('Media da coluna 18\n ', dataset['type'].mean())
-
 
 print('___Desvio Padrao___')
 print('Desvio padrão da coluna 14\n ', dataset['legs'].std())
 print('Desvio padrão da coluna 18\n ', dataset['type'].std())
-#print('Desvio padrão da coluna 18\n ', dataset['type'].std())
 
 print('_______Moda_______')
 print('Moda da coluna 14\n ', dataset['legs'].mode())
 print('Moda da coluna 18\n ', dataset['type'].mode())
-#print('Moda da coluna 18\n ', dataset['type'].mode())
 
 print('_______Mediana_______')
 print('Mediana da coluna 14\n ', dataset['legs'].median())
 print('Mediana da coluna 18\n ', dataset['type'].median())
-#print('Mediana da coluna 18\n ', dataset['type'].median())
-
 
 print('_______Valor_Maximo_______')
 print('Max da coluna 14\n ', dataset['legs'].max())
 print('Max da coluna 18\n ', dataset['type'].max())
-#print('Max da coluna 5\n ', dataset['donatedBlood'].max())
 
 print('_______Valor_Minimo_______')
 print('Min da coluna 14\n ', dataset['legs'].min())
 print('Min da coluna 18\n ', dataset['type'].min())
-#print('Min da coluna 5\n ', dataset['donatedBlood'].min())
-
 
 input("Aperte <enter> para continuar")
 
