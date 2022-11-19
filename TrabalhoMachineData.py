@@ -129,3 +129,9 @@ print('Coluna 9:')
 print(dataset[['PRP']] > dataset[['PRP']].mean())
 print('Coluna 10:') 
 print(dataset[['ERP']] > dataset[['ERP']].mean())
+
+x= dataset.Model
+y = dataset.Myct
+
+plt.scatter(x,y,marker = '*')
+plt.show()

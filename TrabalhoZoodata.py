@@ -65,16 +65,4 @@ print('Coluna 2:')
 print('Media:',dataset['type'].mean())
 print(dataset[['type']] > dataset[['type']].mean()) 
 
-cols = ['hair','feathers','eggs','milk','airborne','aquatic','predator','toothed','back','bone','breathes','venomous','fins','legs','tail','domestic','catsize']
-dataset.rename(columns={cols[0]:0, cols[1]:1, cols[2]:2, cols[3]:3,cols[4]:4, cols[5]:5, cols[6]:6, cols[7]:7,cols[8]:8, cols[9]:9, cols[10]:10, cols[11]:12,},inplace = True)
-dataset.loc[::50]
 print(dataset.shape)
-print(dataset.describe())
-
-colors = {'Iris-setosa': 'red','Iris-virginica':'blue','Iris-versicolor':'green'}
-plt.scatter(
-    dataset[2],
-    dataset[3],
-    c=dataset['Class'].map(colors),marker = '*'
-)
-plt.show()
