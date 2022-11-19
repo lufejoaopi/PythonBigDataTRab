@@ -5,7 +5,7 @@ import numpy as np
 
 
 dataset = pd.read_csv(
-    'iris.data' 
+    'Exemplo.python' 
 )
 
 #print('comprimento da sepala')
