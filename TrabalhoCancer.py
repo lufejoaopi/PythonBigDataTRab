@@ -6,22 +6,17 @@ import matplotlib.pyplot as plt
 dataset = pd.read_csv('breast-cancer-wisconsin.data')
 
 dataset.head()
-#print(s1)
 print(dataset)
 print("Tipo de dado de cada coluna")
 mostra = dataset.dtypes 
 print(mostra)
-#s1 = df['Sepal length'].mean()
 print('mostra cada atributo das colunas')
 coluna = list(dataset.columns)
 print (coluna)
 
 input("Aperte <enter> para continuar")
 
-#s1 = s1.style.highlight_max(color = 'lightgreen', axis = 0)
 print( '__Media das Colunas__')
-#print('Media da coluna 1\n ', dataset['Class-Name'].mean())
-#print('Media da coluna 1\n ', dataset['CodeNumber'].mean())
 print('Media da coluna 2\n ', dataset['ClumpThickness'].mean())
 print('Media da coluna 3\n ', dataset['CellSize'].mean())
 print('Media da coluna 4\n ', dataset['CellShape'].mean())
@@ -32,8 +27,6 @@ print('Media da coluna 8\n ', dataset['BlandChromatin'].mean())
 print('Media da coluna 9\n ', dataset['NormalNucleoli'].mean())
 print('Media da coluna 10\n ', dataset['Mitoses'].mean())
 print('Media da coluna 11\n ', dataset['Class'].mean())
-
-#print('Media da coluna 5\n ', dataset['donatedBlood'].mean())
 
 
 print('___Desvio Padrao___')
@@ -46,7 +39,6 @@ print('Desvio padrão da coluna 8\n ', dataset['BlandChromatin'].std())
 print('Desvio padrão da coluna 9\n ', dataset['NormalNucleoli'].std())
 print('Desvio padrão da coluna 10\n ', dataset['Mitoses'].std())
 print('Desvio padrão da coluna 11\n ', dataset['Class'].std())
-#print('Desvio padrão da coluna 5\n ', dataset['donatedBlood'].std())
 
 print('_______Moda_______')
 print('Moda da coluna 2\n ', dataset['ClumpThickness'].mode())
@@ -58,7 +50,6 @@ print('Moda da coluna 8\n ', dataset['BlandChromatin'].mode())
 print('Moda da coluna 9\n ', dataset['NormalNucleoli'].mode())
 print('Moda da coluna 10\n ', dataset['Mitoses'].mode())
 print('Moda da coluna 11\n ', dataset['Class'].mode())
-#print('Moda da coluna 5\n ', dataset['donatedBlood'].mode())
 
 print('_______Mediana_______')
 print('Mediana da coluna 2\n ', dataset['ClumpThickness'].median())
@@ -71,9 +62,6 @@ print('Mediana da coluna 9\n ', dataset['NormalNucleoli'].median())
 print('Mediana da coluna 10\n ', dataset['Mitoses'].median())
 print('Mediana da coluna 11\n ', dataset['Class'].median())
 
-#print('Mediana da coluna 5\n ', dataset['donatedBlood'].median())
-
-
 print('_______Valor_Maximo_______')
 print('Max da coluna 2\n ', dataset['ClumpThickness'].max())
 print('Max da coluna 3\n ', dataset['CellSize'].max())
@@ -84,8 +72,6 @@ print('Max da coluna 8\n ', dataset['BlandChromatin'].max())
 print('Max da coluna 9\n ', dataset['NormalNucleoli'].max())
 print('Max da coluna 10\n ', dataset['Mitoses'].max())
 print('Max da coluna 11\n ', dataset['Class'].max())
-
-#print('Max da coluna 5\n ', dataset['donatedBlood'].max())
 
 print('_______Valor_Minimo_______')
 print('Min da coluna 2\n ', dataset['ClumpThickness'].min())
@@ -98,12 +84,8 @@ print('Min da coluna 9\n ', dataset['NormalNucleoli'].min())
 print('Min da coluna 10\n ', dataset['Mitoses'].min())
 print('Min da coluna 11\n ', dataset['Class'].min())
 
-#print('Min da coluna 5\n ', dataset['donatedBlood'].min())
-
-
 input("Aperte <enter> para continuar")
 
-#print('min da coluna 1:\n ',dataset['Sepallength'].min())
 print('______Tabela Odenada de Forma Ascendente_______')
 print(dataset.sort_values('CodeNumber'))
 print('______Tabela Ordenada de Forma Descendente_______')
@@ -141,10 +123,6 @@ print(dataset[['Mitoses']] < dataset[['Mitoses']].mean())
 print('Coluna 11:') 
 print('Media:',dataset['Class'].mean())
 print(dataset[['Class']] < dataset[['Class']].mean())
-
-#print('Coluna 5:') 
-#print('Media:',dataset['donatedBlood'].mean())
-#print(dataset[['donatedBlood']] < dataset[['donatedBlood']].mean())
 
 
 print('____Coluna com valores acima da Media:_____')
