@@ -49,7 +49,7 @@ print(dataset['type'].describe())
 
 input("Aperte <enter> para continuar")
 
-print('____Coluna com valores abaixo da Media:_____')
+print('____Responde True com valores abaixo da Media:_____')
 print('Coluna 1:') 
 print('Media:',dataset['Recency'].mean())
 print(dataset[['Recency']] < dataset[['Recency']].mean())
@@ -63,7 +63,7 @@ print('Coluna 4:')
 print('Media:',dataset['Time'].mean())
 print(dataset[['Time']] < dataset[['Time']].mean())
 
-print('____Coluna com valores acima da Media:_____')
+print('____Responde True com valores acima da Media:_____')
 print('Coluna 1:') 
 print('Media:',dataset['Recency'].mean())
 print(dataset[['Recency']] > dataset[['Recency']].mean())
