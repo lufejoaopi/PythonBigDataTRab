@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 dataset = pd.read_csv(
-    '/home/joao/sql/transfusion.data' 
+    'transfusion.data' 
 )
 
 dataset.head()
