@@ -131,7 +131,7 @@ print('Coluna 10:')
 print(dataset[['ERP']] > dataset[['ERP']].mean())
 
 x= dataset.Model
-y = dataset.Myct
+y = dataset.MYCT
 
-plt.scatter(x,y,marker = '*')
+plt.scatter(x,y,label = 'Pontos',  marker = '*',s =100)
 plt.show()
