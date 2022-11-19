@@ -3,14 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt 
 
 
-dataset = pd.read_csv(
-    '/home/joao/sql/breast-cancer-wisconsin.data' 
-)
+dataset = pd.read_csv('breast-cancer-wisconsin.data')
 
-#print('comprimento da sepala')
-#indices de tipo inteiro
-#s1 = pd.Series([1, 3, 4, 5, np.nan, 7, 8])
-#s1 = pd.DataFrame(np.random.randn(6, 4), columns=list("ABCD"))
 dataset.head()
 #print(s1)
 print(dataset)
