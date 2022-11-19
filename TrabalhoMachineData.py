@@ -112,7 +112,7 @@ print(dataset[['PRP']] < dataset[['PRP']].mean())
 print('Coluna 10:') 
 print(dataset[['ERP']] < dataset[['ERP']].mean())
 
-print('____Coluna com valores abaixo da Media:_____')
+print('____Coluna com valores acima da Media:_____')
 print('Coluna 3:') 
 print(dataset[['MYCT']] > dataset[['MYCT']].mean())
 print('Coluna 4:') 
